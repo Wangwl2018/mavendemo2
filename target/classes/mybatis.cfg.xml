@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 导头文件 -->
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- mybatis的核心配置文件 -->
+<configuration>
+	<!-- 配置日志的输出方式 -->
+	<settings>
+		<setting name="logImpl" value="LOG4J" />
+	</settings>
+	<!-- 别名优化 -->
+	<typeAliases>
+		<package name="com.midea.entity"/>
+	</typeAliases>
+
+	<!--Spring的配置文件已自动帮忙注册mapper文件，不需要重复注册，重复注册会报错
+    <mappers>
+        <mapper resource="com/midea/mapper/SysUserMapper.xml" />
+    </mappers>-->
+</configuration>
